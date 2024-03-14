@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Vehicle;
+use Illuminate\Http\Request;
 use App\Http\Requests\StoreVehicleRequest;
 use App\Http\Requests\UpdateVehicleRequest;
-use App\Models\Vehicle;
-use GuzzleHttp\Psr7\Request;
+
 
 class VehicleController extends Controller
 {

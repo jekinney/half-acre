@@ -27,11 +27,11 @@ return new class extends Migration
             $table->unsignedInteger('torque')->nullable();
             $table->string('transmission', 64)->nullable();
             $table->unsignedInteger('speeds')->nullable();
-            $table->boolean('is_manuel')->default(false);
+            $table->boolean('is_manual')->default(false);
             $table->string('rear_end', 64)->nullable();
             $table->string('brakes', 64)->nullable();
-            $table->string('front_suspension', 64)->nullable();
-            $table->string('rear_suspension', 64)->nullable();
+            $table->string('front_suspension', 255)->nullable();
+            $table->string('rear_suspension', 255)->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
